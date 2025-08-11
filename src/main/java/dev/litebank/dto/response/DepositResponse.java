@@ -1,5 +1,6 @@
-package dev.litebank.dto;
+package dev.litebank.dto.response;
 
+import dev.litebank.dto.TransactionStatus;
 import lombok.Getter;
 import lombok.Setter;
 

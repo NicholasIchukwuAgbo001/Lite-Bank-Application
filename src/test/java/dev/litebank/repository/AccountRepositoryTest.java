@@ -18,7 +18,7 @@ class AccountRepositoryTest {
 
     @Test
     @Sql(scripts = {"/db/data.sql"})
-    void findByAccountNumber() {
+    void testFindByAccountNumber() {
         Optional<Account> account = accountRepository.findByAccountNumber("0123456789");
         Account customerAccount = account.orElseThrow(RuntimeException::new);
         assertNotNull(customerAccount);

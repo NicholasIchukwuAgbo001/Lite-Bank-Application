@@ -1,7 +1,7 @@
 package dev.litebank.service;
 
-import dev.litebank.dto.DepositRequest;
-import dev.litebank.dto.DepositResponse;
+import dev.litebank.dto.request.DepositRequest;
+import dev.litebank.dto.response.DepositResponse;
 import dev.litebank.dto.PaymentMethod;
 import dev.litebank.dto.TransactionStatus;
 import org.junit.jupiter.api.Test;
