@@ -7,6 +7,7 @@ import dev.litebank.dto.TransactionStatus;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.jdbc.Sql;
 
 import java.math.BigDecimal;
 
@@ -19,6 +20,7 @@ public class AccountServiceTest {
     private AccountService accountService;
 
     @Test
+    @Sql(scripts = {"/db/data.sql"})
     void testCanDeposit(){
         DepositRequest depositRequest = new DepositRequest();
         depositRequest.setPaymentMethod(PaymentMethod.CARD);

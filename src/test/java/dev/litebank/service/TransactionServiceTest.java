@@ -24,7 +24,7 @@ public class TransactionServiceTest {
         CreateTransactionRequest transactionRequest = new CreateTransactionRequest();
         transactionRequest.setTransactionType(TransactionType.CREDIT);
         transactionRequest.setAccountNumber("0123456789");
-        transactionRequest.setAmount(new BigDecimal(20_000));
+        transactionRequest.setAmount(new BigDecimal("20000.00"));
 
         CreateTransactionResponse transactionResponse =
                 transactionService.create(transactionRequest);
